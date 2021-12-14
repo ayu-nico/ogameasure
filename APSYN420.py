@@ -10,9 +10,6 @@ class APSYN420(scpi.scpi_family):
     product_name = 'APSYN420'
     classification = 'Signal Generator'
 
-    _scpi_enable = '*CLS *ESE *ESR? *IDN? *OPC *OPT? *RCL *RST *SAV *SRE *STB? *TRG? *TST? *WAI'
-
-    
 
     def query(self,cmd):
         self.send(cmd)
